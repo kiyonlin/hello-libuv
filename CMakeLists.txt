@@ -8,6 +8,7 @@ include_directories(/usr/local/Cellar/libuv/HEAD-c431505/include)
 set(SOURCE_FILES
         main.c
         src/01helloworld/helloworld.c src/01helloworld/helloworld.h
-        src/02idle-basic/idle_basic.h src/02idle-basic/idle_basic.c)
+        src/02idle-basic/idle_basic.h src/02idle-basic/idle_basic.c
+        src/03uvcat/uvcat.c src/03uvcat/uvcat.h)
 
 add_executable(hello_libuv ${SOURCE_FILES})
