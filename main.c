@@ -3,6 +3,8 @@
 #include "src/file02-uvcat/uvcat.h"
 #include "src/net01-tcp-echo-server/tcp-echo-server.h"
 #include "src/net02-tcp-echo-client/tcp-echo-client.h"
+#include "src/net03-udp-dhcp/udp-dhcp.h"
+#include "src/net04-dns/dns.h"
 
 //#include "src/thread01-uvonce/thread-uvonce.h"
 //#include "src/thread02-mutex/thread-mutex.h"
@@ -23,8 +25,10 @@ int main(int argc, char** argv) {
     // 配合客户端使用
 //    run_tcp_echo_server();
     // 配个服务端使用
-    run_tcp_echo_client();
+//    run_tcp_echo_client();
 
+//    run_udp_dhcp();
+    run_dns();
 //    run_thread_uvonce();
 //    run_thread_mutex();
 //    run_thread_rwlock();
