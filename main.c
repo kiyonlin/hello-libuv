@@ -1,6 +1,8 @@
-#include "src/01helloworld/helloworld.h"
-#include "src/02idle-basic/idle_basic.h"
-#include "src/03uvcat/uvcat.h"
+#include "src/basic01-helloworld/helloworld.h"
+#include "src/file01-idle-basic/idle_basic.h"
+#include "src/file02-uvcat/uvcat.h"
+#include "src/net01-tcp-echo-server/tcp-echo-server.h"
+#include "src/net02-tcp-echo-client/tcp-echo-client.h"
 
 //#include "src/thread01-uvonce/thread-uvonce.h"
 //#include "src/thread02-mutex/thread-mutex.h"
@@ -17,6 +19,11 @@ int main(int argc, char** argv) {
 //    run_idle_basic();
 
 //    run_uvcat(argc, argv);
+
+    // 配合客户端使用
+//    run_tcp_echo_server();
+    // 配个服务端使用
+    run_tcp_echo_client();
 
 //    run_thread_uvonce();
 //    run_thread_mutex();
