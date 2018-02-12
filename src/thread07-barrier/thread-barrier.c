@@ -44,11 +44,13 @@ void run_thread_barrier()
     uv_thread_create(&thread2, worker2_barrier, NULL);
     uv_thread_create(&thread3, callback_barrier, NULL);
 
+    // join等待线程结束，所以barrier不能放在jion后面，会导致死锁
+    uv_barrier_wait(&barrier);
+
     uv_thread_join(&thread1);
     uv_thread_join(&thread2);
     uv_thread_join(&thread3);
 
-    uv_barrier_wait(&barrier);
     printf("all thread done\n");
     uv_barrier_destroy(&barrier);
 }
