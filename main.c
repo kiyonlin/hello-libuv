@@ -17,6 +17,7 @@
 #include "src/process01-spawn/process-spawn.h"
 #include "src/process02_detach/process_detach.h"
 #include "src/process03_signals/process_signal.h"
+#include "src/process04-proc-streams/process-proc-streams.h"
 
 int main(int argc, char** argv) {
 //    run_hello_world();
@@ -37,7 +38,8 @@ int main(int argc, char** argv) {
 //    run_process_detach();
 
     // 调用`kill -USR1 36669`触发
-    run_process_signal();
+//    run_process_signal();
+    run_process_streams();
 
 //    run_thread_uvonce();
 //    run_thread_mutex();
