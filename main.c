@@ -19,6 +19,7 @@
 #include "src/process03_signals/process_signal.h"
 #include "src/process04-proc-streams/process-proc-streams.h"
 #include "src/process05-cgi/process-cgi.h"
+#include "src/process06-pipes/process-pipe.h"
 
 int main(int argc, char** argv) {
 //    run_hello_world();
@@ -41,7 +42,10 @@ int main(int argc, char** argv) {
     // 调用`kill -USR1 36669`触发
 //    run_process_signal();
 //    run_process_streams();
-    run_process_cgi();
+//    run_process_cgi();
+
+    // 使用 socat - /path/to/socket 通信
+    run_process_pipe();
 
 //    run_thread_uvonce();
 //    run_thread_mutex();

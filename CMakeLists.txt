@@ -27,6 +27,7 @@ set(SOURCE_FILES
         src/process02_detach/process_detach.c src/process02_detach/process_detach.h
         src/process03_signals/process_signal.c src/process03_signals/process_signal.h
         src/process04-proc-streams/process-proc-streams.c src/process04-proc-streams/process-proc-streams.h
-        src/process05-cgi/process-cgi.c src/process05-cgi/process-cgi.h)
+        src/process05-cgi/process-cgi.c src/process05-cgi/process-cgi.h
+        src/process06-pipes/process-pipe.c src/process06-pipes/process-pipe.h)
 
 add_executable(hello_libuv ${SOURCE_FILES})
