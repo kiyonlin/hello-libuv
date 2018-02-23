@@ -24,6 +24,7 @@ set(SOURCE_FILES
         src/net04-dns/dns.c src/net04-dns/dns.h
         src/net05-interfaces/net-interfaces.c src/net05-interfaces/net-interfaces.h
         src/process01-spawn/process-spawn.c src/process01-spawn/process-spawn.h
-        src/process02_detach/process_detach.c src/process02_detach/process_detach.h)
+        src/process02_detach/process_detach.c src/process02_detach/process_detach.h
+        src/process03_signals/process_signal.c src/process03_signals/process_signal.h)
 
 add_executable(hello_libuv ${SOURCE_FILES})

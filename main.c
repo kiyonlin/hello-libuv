@@ -16,6 +16,7 @@
 #include "src/thread08-tls/thread-tls.h"
 #include "src/process01-spawn/process-spawn.h"
 #include "src/process02_detach/process_detach.h"
+#include "src/process03_signals/process_signal.h"
 
 int main(int argc, char** argv) {
 //    run_hello_world();
@@ -33,7 +34,10 @@ int main(int argc, char** argv) {
 //    run_net_interfaces();
 
 //    run_process_spawn();
-    run_process_detach();
+//    run_process_detach();
+
+    // 调用`kill -USR1 36669`触发
+    run_process_signal();
 
 //    run_thread_uvonce();
 //    run_thread_mutex();
