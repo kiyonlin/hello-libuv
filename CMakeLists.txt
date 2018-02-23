@@ -19,6 +19,6 @@ set(SOURCE_FILES
         src/thread07-barrier/thread-barrier.c src/thread07-barrier/thread-barrier.h
         src/thread08-tls/thread-tls.c src/thread08-tls/thread-tls.h
         src/net01-tcp-echo-server/tcp-echo-server.c src/net01-tcp-echo-server/tcp-echo-server.h
-        src/net02-tcp-echo-client/tcp-echo-client.c src/net02-tcp-echo-client/tcp-echo-client.h src/net03-udp-dhcp/udp-dhcp.c src/net03-udp-dhcp/udp-dhcp.h src/net04-dns/dns.c src/net04-dns/dns.h)
+        src/net02-tcp-echo-client/tcp-echo-client.c src/net02-tcp-echo-client/tcp-echo-client.h src/net03-udp-dhcp/udp-dhcp.c src/net03-udp-dhcp/udp-dhcp.h src/net04-dns/dns.c src/net04-dns/dns.h src/net05-interfaces/net-interfaces.c src/net05-interfaces/net-interfaces.h)
 
 add_executable(hello_libuv ${SOURCE_FILES})
