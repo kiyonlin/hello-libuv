@@ -15,6 +15,7 @@
 #include "src/thread07-barrier/thread-barrier.h"
 #include "src/thread08-tls/thread-tls.h"
 #include "src/process01-spawn/process-spawn.h"
+#include "src/process02_detach/process_detach.h"
 
 int main(int argc, char** argv) {
 //    run_hello_world();
@@ -32,6 +33,7 @@ int main(int argc, char** argv) {
 //    run_net_interfaces();
 
 //    run_process_spawn();
+    run_process_detach();
 
 //    run_thread_uvonce();
 //    run_thread_mutex();
