@@ -35,6 +35,7 @@ set(SOURCE_FILES
         src/utils02-idle-compute/utils-idle-compute.c src/utils02-idle-compute/utils-idle-compute.h
         src/thread09-queue-work/thread-queue-work.c src/thread09-queue-work/thread-queue-work.h
         src/thread10-queue-cancel/thread-queue-cancel.c src/thread10-queue-cancel/thread-queue-cancel.h
-        src/thread11-progress/thread-progress.c src/thread11-progress/thread-progress.h)
+        src/thread11-progress/thread-progress.c src/thread11-progress/thread-progress.h
+        src/file03-onchange/file-onchange.c src/file03-onchange/file-onchange.h)
 
 add_executable(hello_libuv ${SOURCE_FILES})
