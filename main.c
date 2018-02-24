@@ -26,6 +26,7 @@
 #include "src/utils02-idle-compute/utils-idle-compute.h"
 #include "src/thread09-queue-work/thread-queue-work.h"
 #include "src/thread10-queue-cancel/thread-queue-cancel.h"
+#include "src/thread11-progress/thread-progress.h"
 
 int main(int argc, char** argv) {
 //    run_hello_world();
@@ -64,7 +65,8 @@ int main(int argc, char** argv) {
 //    run_thread_barrier();
 //    run_thread_tls();
 //    run_thread_queue_work();
-    run_thread_queue_cancel();
+//    run_thread_queue_cancel();
+    run_thread_progress();
 
 //    run_utils_ref_timer();
 //    run_utils_idle_compute();
