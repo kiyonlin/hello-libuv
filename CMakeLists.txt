@@ -30,6 +30,7 @@ set(SOURCE_FILES
         src/process05-cgi/process-cgi.c src/process05-cgi/process-cgi.h
         src/process06-pipes/process-pipe.c src/process06-pipes/process-pipe.h
         src/process07-multi-echo-server/process-multi-echo-server.c src/process07-multi-echo-server/process-multi-echo-server.h
-        src/basic02-uvstop/basic-uvstop.c src/basic02-uvstop/basic-uvstop.h)
+        src/basic02-uvstop/basic-uvstop.c src/basic02-uvstop/basic-uvstop.h
+        src/utils01-timers/utils-ref-timer.c src/utils01-timers/utils-ref-timer.h)
 
 add_executable(hello_libuv ${SOURCE_FILES})
