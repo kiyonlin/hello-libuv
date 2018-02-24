@@ -28,6 +28,7 @@ set(SOURCE_FILES
         src/process03_signals/process_signal.c src/process03_signals/process_signal.h
         src/process04-proc-streams/process-proc-streams.c src/process04-proc-streams/process-proc-streams.h
         src/process05-cgi/process-cgi.c src/process05-cgi/process-cgi.h
-        src/process06-pipes/process-pipe.c src/process06-pipes/process-pipe.h)
+        src/process06-pipes/process-pipe.c src/process06-pipes/process-pipe.h
+        src/process07-multi-echo-server/process-multi-echo-server.c src/process07-multi-echo-server/process-multi-echo-server.h)
 
 add_executable(hello_libuv ${SOURCE_FILES})

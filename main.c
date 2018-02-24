@@ -20,6 +20,7 @@
 #include "src/process04-proc-streams/process-proc-streams.h"
 #include "src/process05-cgi/process-cgi.h"
 #include "src/process06-pipes/process-pipe.h"
+#include "src/process07-multi-echo-server/process-multi-echo-server.h"
 
 int main(int argc, char** argv) {
 //    run_hello_world();
@@ -45,8 +46,8 @@ int main(int argc, char** argv) {
 //    run_process_cgi();
 
     // 使用 socat - /path/to/socket 通信
-    run_process_pipe();
-
+//    run_process_pipe();
+    run_process_multi_echo_server();
 //    run_thread_uvonce();
 //    run_thread_mutex();
 //    run_thread_rwlock();
