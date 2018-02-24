@@ -31,6 +31,8 @@ set(SOURCE_FILES
         src/process06-pipes/process-pipe.c src/process06-pipes/process-pipe.h
         src/process07-multi-echo-server/process-multi-echo-server.c src/process07-multi-echo-server/process-multi-echo-server.h
         src/basic02-uvstop/basic-uvstop.c src/basic02-uvstop/basic-uvstop.h
-        src/utils01-timers/utils-ref-timer.c src/utils01-timers/utils-ref-timer.h)
+        src/utils01-timers/utils-ref-timer.c src/utils01-timers/utils-ref-timer.h
+        src/utils02-idle-compute/utils-idle-compute.c src/utils02-idle-compute/utils-idle-compute.h
+        src/thread09-queue-work/thread-queue-work.c src/thread09-queue-work/thread-queue-work.h)
 
 add_executable(hello_libuv ${SOURCE_FILES})
