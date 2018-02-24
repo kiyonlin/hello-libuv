@@ -33,6 +33,7 @@ set(SOURCE_FILES
         src/basic02-uvstop/basic-uvstop.c src/basic02-uvstop/basic-uvstop.h
         src/utils01-timers/utils-ref-timer.c src/utils01-timers/utils-ref-timer.h
         src/utils02-idle-compute/utils-idle-compute.c src/utils02-idle-compute/utils-idle-compute.h
-        src/thread09-queue-work/thread-queue-work.c src/thread09-queue-work/thread-queue-work.h)
+        src/thread09-queue-work/thread-queue-work.c src/thread09-queue-work/thread-queue-work.h
+        src/thread10-queue-cancel/thread-queue-cancel.c src/thread10-queue-cancel/thread-queue-cancel.h)
 
 add_executable(hello_libuv ${SOURCE_FILES})
