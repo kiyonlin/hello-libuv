@@ -1,4 +1,5 @@
 #include "src/basic01-helloworld/helloworld.h"
+#include "src/basic02-uvstop/basic-uvstop.h"
 #include "src/file01-idle-basic/idle_basic.h"
 #include "src/file02-uvcat/uvcat.h"
 #include "src/net01-tcp-echo-server/tcp-echo-server.h"
@@ -24,6 +25,7 @@
 
 int main(int argc, char** argv) {
 //    run_hello_world();
+    run_uv_stop();
 
 //    run_idle_basic();
 
@@ -47,7 +49,8 @@ int main(int argc, char** argv) {
 
     // 使用 socat - /path/to/socket 通信
 //    run_process_pipe();
-    run_process_multi_echo_server();
+//    run_process_multi_echo_server();
+
 //    run_thread_uvonce();
 //    run_thread_mutex();
 //    run_thread_rwlock();
