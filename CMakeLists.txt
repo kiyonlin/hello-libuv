@@ -36,6 +36,7 @@ set(SOURCE_FILES
         src/thread09-queue-work/thread-queue-work.c src/thread09-queue-work/thread-queue-work.h
         src/thread10-queue-cancel/thread-queue-cancel.c src/thread10-queue-cancel/thread-queue-cancel.h
         src/thread11-progress/thread-progress.c src/thread11-progress/thread-progress.h
-        src/file03-onchange/file-onchange.c src/file03-onchange/file-onchange.h)
+        src/file03-onchange/file-onchange.c src/file03-onchange/file-onchange.h
+        src/file04-uvtee/file-uvtee.c src/file04-uvtee/file-uvtee.h)
 
 add_executable(hello_libuv ${SOURCE_FILES})

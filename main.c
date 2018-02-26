@@ -4,6 +4,7 @@
 #include "src/file01-idle-basic/idle_basic.h"
 #include "src/file02-uvcat/uvcat.h"
 #include "src/file03-onchange/file-onchange.h"
+#include "src/file04-uvtee/file-uvtee.h"
 
 #include "src/net01-tcp-echo-server/tcp-echo-server.h"
 #include "src/net02-tcp-echo-client/tcp-echo-client.h"
@@ -41,7 +42,8 @@ int main(int argc, char** argv) {
 //    run_idle_basic();
 
 //    run_uvcat(argc, argv);
-    run_file_onchange(argc, argv);
+//    run_file_onchange(argc, argv);
+    run_file_uvtee(argc, argv);
 
     // 配合客户端使用
 //    run_tcp_echo_server();
